@@ -25,7 +25,7 @@ url                      : "https://topitems.github.io" # the base hostname & pr
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : C:\Users\welpi\Documents\Python\GitHub\topitems.github.io\assets\images\topitems.png # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -75,7 +75,7 @@ google:
 # SEO Related
 google_site_verification :
 bing_site_verification   :
-naver_site_verification  :
+naver_site_verification  : "2fd3a2f340f75e1a4de2ef68c9dbf0b0860f2d68"
 yandex_site_verification :
 baidu_site_verification  :
 
@@ -104,10 +104,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "top items"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  bio              : "온라인 쇼핑몰 TOP 아이템 추천"
+  location         : "South Korea"
   email            :
   links:
     - label: "Email"
@@ -220,8 +220,8 @@ sass:
 permalink: /:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
+timezone:  # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+TZInfo: Asia/Seoul
 
 # Plugins (previously gems:)
 plugins:
@@ -257,13 +257,13 @@ tag_archive:
   type: liquid
   path: /tags/
 # https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: archive-taxonomy
+    tag: archive-taxonomy
 #   permalinks:
 #     category: /categories/:name/
 #     tag: /tags/:name/
@@ -290,3 +290,6 @@ defaults:
       comments: # true
       share: true
       related: true
+      
+      show_date: true
+      date_format: "%Y-%m-%d"
